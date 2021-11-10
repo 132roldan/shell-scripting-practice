@@ -17,7 +17,7 @@ echo "type the first number and press enter"
 read fnumber
 echo "now, type the second number and press enter"
 read snumber
-let total=$fnumber+$snumber
+let total="(( 10#$fnumber+10#$snumber ))"
 echo "result is $total"
 echo "do you wanna do more math?"
 echo " enter 1 for continue adding numbers or any number for exit"
@@ -36,7 +36,7 @@ echo "type the first number and press enter"
 read fnumber
 echo "now, type the second number and press enter"
 read snumber
-let total=$fnumber-$snumber
+let total="(( 10#$fnumber-10#$snumber ))"
 echo "result is $total"
 echo "do you wanna do more math?"
 echo " enter 1 for continue subtracting numbers or any number for exit"
@@ -48,6 +48,7 @@ done
 		;;
 	*)
 		echo "whoop, I only know how to add or subtract." >&2
+
 		;;
 esac
 
